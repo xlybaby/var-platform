@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: VAR-PLATFORM
+    
+server:
+  port: 7001
+  context-path: /var
+  
+var:
+  platform:
+    research:
+      webdriver:
+        pool:
+          maxIdle: 10
+          maxTotal: 20
+          testOnBorrow: false
+          testOnReturn: false
+          minIdle: 5
+          lifo: false
+          iniNum: 3
+        driverpath: /usr/local/python/webdriver/chromedriver
+        port: 48295
+        
+        
