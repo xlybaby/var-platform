@@ -14,6 +14,10 @@ public class ErrorCode {
 		return "[9100] Can't start remote web driver service["+getParamString(parms)+"]";
 	}
 
+	public static String _8000 (String ... parms) {
+		return "[8000] Error, when adjuesting webdriver container's queue["+getParamString(parms)+"]";
+	}
+	
 	private static String getParamString(String ... parms) {
 		StringBuffer buf = new StringBuffer();
 		if( parms.length > 0 )
