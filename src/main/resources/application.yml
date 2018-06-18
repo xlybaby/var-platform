@@ -1,6 +1,6 @@
 spring:
   application:
-    name: VAR-PLATFORM
+    name: var
     
 server:
   port: 7001

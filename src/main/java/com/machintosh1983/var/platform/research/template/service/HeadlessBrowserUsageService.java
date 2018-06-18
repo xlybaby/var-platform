@@ -12,8 +12,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.machintosh1983.var.platform.common.Constant;
-import com.machintosh1983.var.platform.research.template.model.Element;
-import com.machintosh1983.var.platform.research.template.model.Selector;
+import com.machintosh1983.var.platform.research.template.model.cast.Element;
+import com.machintosh1983.var.platform.research.template.model.cast.Selector;
 import com.machintosh1983.var.platform.research.webdriver.WebdriverFactory;
 import com.machintosh1983.var.platform.research.webdriver.util.DriverContainer;
 

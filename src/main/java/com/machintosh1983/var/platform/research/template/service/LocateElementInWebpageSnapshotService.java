@@ -6,8 +6,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.springframework.stereotype.Service;
 
-import com.machintosh1983.var.platform.research.template.model.Element;
-import com.machintosh1983.var.platform.research.template.model.Selector;
+import com.machintosh1983.var.platform.research.template.model.cast.Element;
+import com.machintosh1983.var.platform.research.template.model.cast.Selector;
 
 /**
  * 
