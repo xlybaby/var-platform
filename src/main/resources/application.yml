@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: var
+    
+server:
+  port: 7001
+  context-path: /var
+  
+var:
+  platform:
+    static:
+      rootPath: /Users/apple/Documents/var/workspace/var-view/var-view
+    research:
+      webdriver:
+        pool:
+          maxIdle: 10
+          maxTotal: 20
+          testOnBorrow: false
+          testOnReturn: false
+          minIdle: 5
+          lifo: false
+          iniNum: 3
+        driverpath: /usr/local/python/webdriver/chromedriver
+        port: 48295
+        
+        

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Index</title>
+		<script type="text/javascript" src="js/detector.js"></script>
+		<script type="text/javascript" src="js/jquery_2.2.4.js"></script>
+
+		<script type="text/javascript">
+			function getimage() {
+				var img = $("#img");
+				if (img) {
+					var location="http://drugs.dxy.cn/index.htm";
+					img.attr("src","template/capture?location="+encodeURIComponent(location));
+				}
+			}
+		</script>
+	</head>
+	<body style="margin:0;padding:0;" onload="getimage();">
+		<!--
+		<div name="container" style="width: 1280px; height: 700px; background-color: #efefef; margin:0; padding:0; overflow: hidden;">
+			<img src="var/images/snapshot_10c61106-58bd-11e8-8dee-a45e60c350d5.png" style="max-width:100%;" onclick="getInternalClickPosition(event, this)" />
+		</div>
+		-->
+		<img id="img" src="" onclick="getInternalClickPosition(event, this)" />
+	</body>
+</html>
