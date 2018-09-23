@@ -9,7 +9,7 @@ server:
 var:
   platform:
     static:
-      rootPath: /Users/apple/Documents/var/workspace/var-view/var-view
+      rootPath: /Users/Machintosh1983/Documents/workspace-brand-new/git/var-view/web
     research:
       webdriver:
         pool:

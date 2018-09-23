@@ -25,6 +25,26 @@ public class PlatformFrontController {
 	@Value("${var.platform.static.rootPath}")
 	private String rootPath;
 	
+	@RequestMapping(value="/subview/*/{res}", method=RequestMethod.GET)
+	public void fetchSubContent( @PathVariable("res") String res, HttpServletRequest request,  HttpServletResponse response ) throws IOException {
+		File root = new File(rootPath);
+		File body = new File(root, res+".html");
+		response.setContentType("text/html; charset=utf-8");
+		OutputStream out = response.getOutputStream();
+		FileInputStream bodyfile = new FileInputStream(body);
+		BufferedInputStream bufbodyfile = new BufferedInputStream(bodyfile);
+		
+		byte[] reads = new byte[1024];
+		int readbytes;
+		
+		while((readbytes = bufbodyfile.read(reads)) > 0 ) {
+			out.write(reads, 0, readbytes);
+			out.flush();
+		}
+		bufbodyfile.close();		
+		
+	}
+	
 	@RequestMapping(value="/view/*/{path}", method=RequestMethod.GET)
 	public void fetchContent( @PathVariable("path") String path, HttpServletRequest request,  HttpServletResponse response ) throws IOException {
 		File root = new File(rootPath);
